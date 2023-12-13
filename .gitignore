@@ -1,0 +1,17 @@
+node_modules
+.next
+.vscode
+
+*.log
+
+dist
+.DS_Store
+
+# Pre_Dockerfile
+
+# apps/vstudio/output
+# apps/vstudio/public/local-assets
+
+# .env*.local
+
+# standalone

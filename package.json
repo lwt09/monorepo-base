@@ -1,0 +1,27 @@
+{
+  "name": "next-monorepo-base",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "lint-staged"
+  },
+  "lint-staged": {
+    "**/**.{ts,tsx,jsx,js,json,md,vue}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@lwt/configrc": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^11.0.1",
+    "prettier": "^2.7.1"
+  }
+}
