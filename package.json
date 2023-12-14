@@ -11,9 +11,13 @@
     "lint": "lint-staged"
   },
   "lint-staged": {
-    "**/**.{ts,tsx,jsx,js,json,md,vue}": [
-      "prettier --write",
-      "git add"
+    "packages/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "apps/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "dependencies": {
@@ -22,6 +26,7 @@
   "devDependencies": {
     "husky": "^8.0.3",
     "lint-staged": "^11.0.1",
+    "next": "14.0.4",
     "prettier": "^2.7.1"
   }
 }

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@lwt/styles/global.css';
+
+html,
+body {
+  height: 100vh;
+}

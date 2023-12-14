@@ -1,14 +1,11 @@
 module.exports = {
   // 需要 next 时候开启这配置
-  // extends: ['airbnb', 'next/core-web-vitals', 'next'],
-  // plugins: ['prettier'],
-
-  // extends: ['airbnb', 'prettier', 'next'],
-  // plugins: ['prettier'],
+  extends: ['airbnb', 'prettier', 'next'],
+  plugins: ['prettier'],
 
   // 不需要 next 时候正常配置
-  extends: ['airbnb', 'prettier'],
-  plugins: ['prettier'],
+  // extends: ['airbnb', 'prettier'],
+  // plugins: ['prettier'],
 
   env: {
     browser: true,
@@ -36,5 +33,6 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
     'react/no-unstable-nested-components': 'off',
     'no-empty': 'warn',
+    'no-html-link-for-pages': 'off',
   },
 };
