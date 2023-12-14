@@ -31,3 +31,4 @@ packages 为公共模块目录
 pnpm 结构下[bug]，eslintrc 如果需要找到 next 的部分配置文件，需要把 next 直接安装在全局。当然也有可能是我找的 eslint-config-next 不对，不然正常应该是找得到的。
 
 如果该项目内没有使用到 next ，可以把 eslint 中 next 相关的配置 + 根目录的 next 移除。
+上网查听说可以用 peerDependencies 来确保全局已经安装了 next，但是尝试失败。
