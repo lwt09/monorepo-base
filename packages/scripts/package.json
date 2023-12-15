@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "@lwt/configrc": "workspace:^1.0.0",
+    "colors": "^1.4.0",
     "esm": "^3.2.25",
-    "execa": "^1.0.0"
+    "execa": "^1.0.0",
+    "glob": "^8.0.3"
   }
 }

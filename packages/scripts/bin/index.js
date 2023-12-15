@@ -5,30 +5,29 @@
 require = require('esm')(module); // eslint-disable-line
 
 async function run() {
-  //   const [script] = process.argv.slice(2);
+  const [script] = process.argv.slice(2);
 
-  //   const scripts = [
-  //     'prebuild',
-  //     'doctor',
-  //     'clean',
-  //     'dev',
-  //     'build',
-  //     'build:test',
-  //     'build:pro',
-  //     'start',
-  //     'create-app',
-  //     'run-in',
-  //   ];
+  const scripts = [
+    'prebuild',
+    'doctor',
+    'clean',
+    'dev',
+    'build',
+    'build:test',
+    'build:pro',
+    'start',
+    'create-app',
+    'run-in',
+  ];
 
-  //   if (!scripts.includes(script)) {
-  //     /* eslint-disable-next-line */
-  //     console.log(
-  //       `Unknown script "${script}". You may need to add it into thsi file:scripts/bin/amg-script.js`,
-  //     );
-  //     process.exit(1);
-  //   }
+  if (!scripts.includes(script)) {
+    /* eslint-disable-next-line */
+    console.log(
+      `Unknown script "${script}". You may need to add it into this file:scripts/bin/amg-script.js`,
+    );
+    process.exit(1);
+  }
 
-  const script = 'prebuild';
   // eslint-disable-next-line
   require(`../scripts/${script}`);
 }

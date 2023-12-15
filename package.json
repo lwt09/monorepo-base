@@ -8,7 +8,9 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "lint": "lint-staged"
+    "lint": "lint-staged",
+    "dev": "lwt-pnpm dev",
+    "prebuild": "lwt-pnpm prebuild"
   },
   "lint-staged": {
     "packages/**/*.{js,jsx,ts,tsx}": [

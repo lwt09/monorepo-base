@@ -23,6 +23,9 @@ const pkgDir = fs
 
 const babelConfigFilePath = path.resolve(execCwd, './config/babel.config.js');
 
+const args = process.argv.slice(3);
+const needWatch = args.includes('--watch');
+
 for (const dir of pkgDir) {
   if (!exists(path.resolve(dir, 'src'))) {
     continue;
@@ -33,7 +36,15 @@ for (const dir of pkgDir) {
 
   summon(
     'babel',
-    [targetSrc, '--out-dir', targetDist, '--copy-files', '--config-file', babelConfigFilePath],
+    [
+      targetSrc,
+      '--out-dir',
+      targetDist,
+      needWatch && '--watch',
+      '--copy-files',
+      '--config-file',
+      babelConfigFilePath,
+    ],
     {
       stdio: 'inherit',
       cwd: execCwd,
