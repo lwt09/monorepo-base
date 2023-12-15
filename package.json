@@ -21,7 +21,8 @@
     ]
   },
   "dependencies": {
-    "@lwt/configrc": "^1.0.0"
+    "@lwt/configrc": "^1.0.0",
+    "@lwt/scripts": "^1.0.0"
   },
   "devDependencies": {
     "husky": "^8.0.3",
